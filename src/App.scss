@@ -1,0 +1,79 @@
+@mixin centring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  width: 600px;
+  margin: auto;
+  background-color: beige;
+  .nav-bar {
+    background-color: #f55a5a;
+    height: 55px;
+    @include centring;
+    gap: 7px;
+    p {
+      color: white;
+
+      font: {
+        size: 15px;
+        weight: 500;
+      }
+    }
+  }
+  section {
+    padding: 45px 40px 0px;
+    .travel {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      border-bottom: 0.3px solid #918e9b3b;
+      @include centring;
+      gap: 20px;
+      .content {
+        .location {
+          @include centring;
+          justify-content: flex-start;
+          p {
+            color: #2b283a;
+            letter-spacing: 4px;
+            margin: {
+              left: 4px;
+              right: 12px;
+            }
+            font: {
+              size: 12px;
+              weight: 600;
+              family : {
+              }
+            }
+          }
+          a {
+            color: #918e9b;
+          }
+        }
+        h1 {
+          margin: {
+            top: 5px;
+            bottom: 20px;
+          }
+          font: {
+            weight: 700;
+            size: 25px;
+          }
+        }
+        h3 {
+          margin-bottom: 10px;
+        }
+        p {
+          color: #2b283a;
+        }
+      }
+    }
+  }
+}
