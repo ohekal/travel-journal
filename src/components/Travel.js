@@ -1,5 +1,5 @@
 import React from "react";
-import loc from "../loc.png";
+import loc from "../images/loc.png";
 function Travel(props) {
   return (
     <div className="travel">
