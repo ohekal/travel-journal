@@ -1,12 +1,12 @@
 import React from "react";
-
+import loc from "../loc.png";
 function Travel(props) {
   return (
     <div className="travel">
-      <img src={process.env.PUBLIC_URL + "images/" + `${props.img}`} />
+      <img src={require(`../images/${props.img}`)} alt="" />
       <div className="content">
         <div className="location">
-          <img src={process.env.PUBLIC_URL + "images/loc.png"} width="10px" />
+          <img src={loc} width="10px" alt="" />
           <p>{props.location}</p>
           <a href="#">View on Google Maps</a>
         </div>
